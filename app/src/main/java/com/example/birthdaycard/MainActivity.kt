@@ -46,7 +46,7 @@ class MainActivity : ComponentActivity() {
 fun BirthdayCardApp(modifier: Modifier = Modifier) {
     Box(modifier) {
         Image(
-            painter = painterResource(id = R.drawable.androidparty),
+            painter = painterResource(R.drawable.androidparty),
             contentDescription = null,
             contentScale = ContentScale.Crop,
             alpha = 0.5F
@@ -56,7 +56,7 @@ fun BirthdayCardApp(modifier: Modifier = Modifier) {
             modifier = modifier
         ) {
             Text(
-                text = stringResource(R.string.happy_birthday_abu_al_leef),
+                text = stringResource(R.string.happy_new_year),
                 fontSize = 100.sp,
                 lineHeight = 116.sp,
                 textAlign = TextAlign.Center,
@@ -66,9 +66,8 @@ fun BirthdayCardApp(modifier: Modifier = Modifier) {
                 text = stringResource(R.string.from_amer),
                 fontSize = 36.sp,
                 modifier = Modifier
-                    .padding(top = 16.dp)
-                    .padding(end = 16.dp)
-                    .align(alignment = Alignment.End)
+                    .padding(top = 16.dp, end = 16.dp)
+                    .align(alignment = Alignment.CenterHorizontally)
 
             )
         }
